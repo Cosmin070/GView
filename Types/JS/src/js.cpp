@@ -32,6 +32,8 @@ extern "C"
 
         settings.AddPlugin(&js->plugins.addStrings);
         settings.AddPlugin(&js->plugins.reverseStrings);
+        settings.AddPlugin(&js->plugins.removeComments);
+        settings.AddPlugin(&js->plugins.mergeStrings);
         win->CreateViewer("Lexical", settings);
 
         win->CreateViewer<TextViewer::Settings>("Text View");
